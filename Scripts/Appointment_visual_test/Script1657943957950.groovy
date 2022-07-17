@@ -30,22 +30,21 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Se
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center        _5b4107'), 
-    'Hongkong CURA Healthcare Center', true)
+    'Seoul CURA Healthcare Center', true)
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Apply for hospital readmission_hospit_63901f'))
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Medicaid_programs'))
-
-WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/textarea_Comment_comment'), 'Exam')
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_None_programs'))
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/div_Visit Date (Required)_input-group-addon'))
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/td_31'))
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/td_29'))
+
+WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/textarea_Comment_comment'), 'weekly checkup')
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Book Appointment'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/p_Hongkong CURA Healthcare Center'), 
-    'Hongkong CURA Healthcare Center')
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Go to Homepage'))
 
 WebUI.takeScreenshotAsCheckpoint('Visual_test_pic')
 
